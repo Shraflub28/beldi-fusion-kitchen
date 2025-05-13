@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beldi Fusion Kitchen - Moroccan Fusion Cuisine</title>
+    <link rel="icon" href="android-chrome-192x192.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="android-chrome-192x192.png" alt="Beldi Fusion Kitchen Logo">
+                <h1>Beldi Fusion Kitchen</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active" data-lang-key="nav-home">Home</a></li>
+                    <li><a href="#menu" data-lang-key="nav-menu">Menu</a></li>
+                    <li><a href="#about" data-lang-key="nav-about">About Us</a></li>
+                    <li><a href="#gallery" data-lang-key="nav-gallery">Gallery</a></li>
+                    <li><a href="#contact" data-lang-key="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <div class="language-selector">
+                    <button class="current-lang">
+                        <i class="fas fa-globe"></i>
+                        <span>EN</span>
+                    </button>
+                    <ul class="language-dropdown">
+                        <li data-lang="en" class="active">English</li>
+                        <li data-lang="fr">Français</li>
+                        <li data-lang="ar">العربية</li>
+                    </ul>
+                </div>
+                <div class="cart-button">
+                    <button class="order-btn" data-lang-key="order-btn">Order Online</button>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-lang-key="hero-title">AUTHENTIC MOROCCAN<br>BETTER TASTING</h1>
+            <p data-lang-key="hero-subtitle">A unique blend of traditional Moroccan flavors with international influences</p>
+            <button class="cta-button" data-lang-key="view-menu-btn">View Our Menu</button>
+        </div>
+        <div class="hero-image">
+            <img src="imgs/tajine-de-poulet-au-citron.jpg" alt="Signature Tajine Dish" class="main-dish">
+            <img src="imgs/mixed-grill-1.jpg" alt="Mixed Grill" class="side-dish-1">
+            <img src="imgs/pastila-au-poulet.jpg" alt="Pastilla au Poulet" class="side-dish-2">
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title" data-lang-key="how-it-works-title">HOW IT WORKS</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 data-lang-key="step1-title">Choose Your Dishes</h3>
+                    <p data-lang-key="step1-desc">Browse our extensive menu featuring traditional and fusion Moroccan dishes</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 data-lang-key="step2-title">Add To Cart</h3>
+                    <p data-lang-key="step2-desc">Select your favorite items and add them to your cart with just one click</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-motorcycle"></i>
+                    </div>
+                    <h3 data-lang-key="step3-title">Enjoy Delivery</h3>
+                    <p data-lang-key="step3-desc">Receive your order at your doorstep or pick it up at our restaurant</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 data-lang-key="step4-title">Savor the Flavors</h3>
+                    <p data-lang-key="step4-desc">Enjoy the authentic taste of Morocco with a modern twist</p>
+                </div>
+            </div>
+            <button class="cta-button" data-lang-key="order-now-btn">Order Now</button>
+        </div>
+    </section>
+
+    <section id="featured" class="featured-dishes">
+        <div class="container">
+            <h2 class="section-title" data-lang-key="featured-dishes-title">Featured Dishes</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <img src="imgs/tajine-de-poulet-au-citron.jpg" alt="Tajine de Poulet au Citron">
+                    <div class="dish-info">
+                        <h3>Tajine de Poulet au Citron</h3>
+                        <p data-lang-key="tajine-desc">Traditional chicken tajine with preserved lemon and olives</p>
+                        <div class="dish-footer">
+                            <span class="price">160 DH</span>
+                            <button class="add-to-cart" data-lang-key="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="imgs/pastila-au-poulet.jpg" alt="Pastilla au Poulet">
+                    <div class="dish-info">
+                        <h3>Pastilla au Poulet</h3>
+                        <p data-lang-key="pastilla-desc">Sweet and savory chicken pie with almonds and cinnamon</p>
+                        <div class="dish-footer">
+                            <span class="price">125 DH</span>
+                            <button class="add-to-cart" data-lang-key="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="imgs/fondant-chocolat-glace-vanille-1.jpg" alt="Fondant au Chocolat">
+                    <div class="dish-info">
+                        <h3>Fondant au Chocolat</h3>
+                        <p data-lang-key="fondant-desc">Warm chocolate fondant with vanilla ice cream</p>
+                        <div class="dish-footer">
+                            <span class="price">85 DH</span>
+                            <button class="add-to-cart" data-lang-key="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="imgs/mixed-grill-1.jpg" alt="Mixed Grill">
+                    <div class="dish-info">
+                        <h3>Mixed Grill</h3>
+                        <p data-lang-key="mixed-grill-desc">Assortment of grilled meats with Moroccan spices</p>
+                        <div class="dish-footer">
+                            <span class="price">220 DH</span>
+                            <button class="add-to-cart" data-lang-key="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-key="menu-title">Our Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all" data-lang-key="cat-all">All</button>
+                <button class="category-btn" data-category="tajines" data-lang-key="cat-tajines">Tajines</button>
+                <button class="category-btn" data-category="main" data-lang-key="cat-main">Main Dishes</button>
+                <button class="category-btn" data-category="pasta" data-lang-key="cat-pasta">Pasta</button>
+                <button class="category-btn" data-category="burgers" data-lang-key="cat-burgers">Burgers & Sandwiches</button>
+                <button class="category-btn" data-category="starters" data-lang-key="cat-starters">Starters</button>
+                <button class="category-btn" data-category="salads" data-lang-key="cat-salads">Salads</button>
+                <button class="category-btn" data-category="sushi" data-lang-key="cat-sushi">Sushi</button>
+                <button class="category-btn" data-category="desserts" data-lang-key="cat-desserts">Desserts</button>
+                <button class="category-btn" data-category="drinks" data-lang-key="cat-drinks">Drinks</button>
+                <button class="category-btn" data-category="smoothies" data-lang-key="cat-smoothies">Smoothies</button>
+                <button class="category-btn" data-category="juices" data-lang-key="cat-juices">Fresh Juices</button>
+            </div>
+            
+            <div class="menu-items-grid" id="menu-items-container">
+                <!-- Menu items will be loaded dynamically with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title" data-lang-key="about-title">About Beldi Fusion Kitchen</h2>
+                    <p data-lang-key="about-p1">Beldi Fusion Kitchen combines the rich culinary heritage of Morocco with international influences to create a unique dining experience. Our chefs use the freshest local ingredients and traditional cooking methods to bring you authentic flavors with a modern twist.</p>
+                    <p data-lang-key="about-p2">Located in the heart of Marrakech, our restaurant offers a warm, inviting atmosphere where you can enjoy exceptional food, friendly service, and the vibrant spirit of Moroccan hospitality.</p>
+                    <button class="cta-button" data-lang-key="visit-us-btn">Visit Us Today</button>
+                </div>
+                <div class="about-image">
+                    <img src="imgs/beldi-bled.jpg" alt="Beldi Fusion Kitchen Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-key="gallery-title">Our Food Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="imgs/tajine-mderbel.jpg" alt="Tajine Mderbel"></div>
+                <div class="gallery-item"><img src="imgs/beldi-cheese-burger.jpg" alt="Beldi Cheese Burger"></div>
+                <div class="gallery-item"><img src="imgs/brownies-cheesecake-pistache-tiramisu.jpg" alt="Dessert Selection"></div>
+                <div class="gallery-item"><img src="imgs/chirashi-saumon.jpg" alt="Chirashi Saumon"></div>
+                <div class="gallery-item"><img src="imgs/crepe-chocolat-dubai-glace-vanille.jpg" alt="Crepe Chocolat"></div>
+                <div class="gallery-item"><img src="imgs/salade-buratta.jpg" alt="Salade Buratta"></div>
+                <div class="gallery-item"><img src="imgs/mixte-box-40-pieces.jpg" alt="Sushi Box"></div>
+                <div class="gallery-item"><img src="imgs/smoothie-rainbow.jpg" alt="Smoothie Rainbow"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-key="testimonials-title">What People Are Saying...</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="imgs/person1.jpg" alt="Customer" class="testimonial-avatar">
+                        <div class="testimonial-meta">
+                            <h4>Sarah L.</h4>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p data-lang-key="testimonial1">"The tajine was absolutely delicious! Authentic Moroccan flavors that transported me straight to Marrakech. Will definitely be coming back!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="imgs/person2.jpg" alt="Customer" class="testimonial-avatar">
+                        <div class="testimonial-meta">
+                            <h4>Mohammed A.</h4>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p data-lang-key="testimonial2">"As a Moroccan, I'm very picky about my tajines, but Beldi Fusion Kitchen nailed it! The fusion dishes are innovative yet respectful of tradition."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="imgs/person3.jpg" alt="Customer" class="testimonial-avatar">
+                        <div class="testimonial-meta">
+                            <h4>Emily R.</h4>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p data-lang-key="testimonial3">"The dessert selection is amazing! The fondant au chocolat and the crepes are absolutely divine. Service was impeccable too!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" data-lang-key="contact-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p data-lang-key="address">123 Avenue Mohammed V, Marrakech, Morocco</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+212 5XX-XXXXXX</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@beldifusionkitchen.ma</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p data-lang-key="hours">Open daily: 11:00 AM - 11:00 PM</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" data-lang-key="form-name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" data-lang-key="form-email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone" data-lang-key="form-phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" data-lang-key="form-message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" data-lang-key="form-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="android-chrome-192x192.png" alt="Beldi Fusion Kitchen Logo">
+                    <h3>Beldi Fusion Kitchen</h3>
+                    <p data-lang-key="footer-tagline">Moroccan Cuisine with a Modern Twist</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-lang-key="quick-links">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-lang-key="nav-home">Home</a></li>
+                        <li><a href="#menu" data-lang-key="nav-menu">Menu</a></li>
+                        <li><a href="#about" data-lang-key="nav-about">About Us</a></li>
+                        <li><a href="#gallery" data-lang-key="nav-gallery">Gallery</a></li>
+                        <li><a href="#contact" data-lang-key="nav-contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4 data-lang-key="opening-hours">Opening Hours</h4>
+                    <ul>
+                        <li data-lang-key="weekday-hours">Monday - Friday: 11:00 AM - 11:00 PM</li>
+                        <li data-lang-key="weekend-hours">Saturday - Sunday: 10:00 AM - 11:30 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-lang-key="copyright">&copy; 2025 Beldi Fusion Kitchen. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3 data-lang-key="your-cart">Your Cart</h3>
+                <button class="close-cart"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span data-lang-key="total">Total:</span>
+                    <span id="cart-total-price">0 DH</span>
+                </div>
+                <button class="checkout-btn" data-lang-key="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 
